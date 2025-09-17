@@ -2,14 +2,15 @@
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-Repositório contendo o **front-end** do projeto **Desafio Fast Workshop**, desenvolvido com **Angular**. Este projeto foi estruturado para fornecer uma aplicação web moderna e escalável.
+Repositório contendo o **front-end** do projeto **Desafio Fast Workshop**, desenvolvido com **Angular**.  
+> ⚠️ Este front-end depende do back-end hospedado neste repositório: [Fast Workshops Back-End](https://github.com/luccahcs/fast-workshops-back-end/tree/main/FastWorkshops.Api)
 
 ---
 
 ## 📝 Descrição
 
-O objetivo deste projeto é demonstrar competências em **desenvolvimento front-end**, utilizando Angular, TypeScript e boas práticas de organização de código.  
-O projeto inclui rotas, componentes reutilizáveis e integração com serviços (simulados ou reais).
+Este projeto implementa a interface web do Desafio Fast Workshop, consumindo APIs fornecidas pelo back-end.  
+O front-end foi desenvolvido seguindo boas práticas de Angular e arquitetura modular, incluindo componentes reutilizáveis, rotas e serviços para comunicação com a API.
 
 ---
 
@@ -25,13 +26,12 @@ O projeto inclui rotas, componentes reutilizáveis e integração com serviços 
 
 ## 🛠️ Pré-requisitos
 
-Certifique-se de ter instalado em sua máquina:
-
 - [Node.js](https://nodejs.org/) (versão LTS recomendada)
-- [npm](https://www.npmjs.com/) (gerenciador de pacotes do Node)
+- [npm](https://www.npmjs.com/)
 - [Angular CLI](https://angular.io/cli)
+- Back-end rodando localmente ou acessível via URL
 
-Instalação do Angular CLI (caso não tenha):
+Instalação do Angular CLI (se necessário):
 
 ```bash
 npm install -g @angular/cli
@@ -52,7 +52,10 @@ bash
 Copiar código
 npm install
 🚀 Executando o projeto
-Para rodar a aplicação localmente:
+Certifique-se de que o back-end esteja rodando.
+Exemplo: http://localhost:5000/api (ou a porta configurada).
+
+Rodar o front-end:
 
 bash
 Copiar código
@@ -62,7 +65,7 @@ O servidor será iniciado em:
 arduino
 Copiar código
 http://localhost:4200
-A aplicação suporta hot reload, então qualquer alteração no código será refletida automaticamente no navegador.
+🔹 A aplicação consumirá as APIs do back-end para exibir dados corretamente.
 
 📂 Estrutura do Projeto
 bash
@@ -82,6 +85,8 @@ Componentes e serviços reutilizáveis
 Uso de SCSS modular para estilos
 
 Comentários claros e código legível
+
+Separação clara entre front-end e consumo de APIs
 
 🤝 Contribuição
 Faça um fork do repositório
@@ -112,3 +117,5 @@ Angular Documentation
 TypeScript Documentation
 
 Node.js Documentation
+
+Fast Workshops Back-End
