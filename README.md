@@ -1,18 +1,41 @@
 # Desafio Fast Workshop - Front End
 
-Este repositório contém o projeto front-end do **Desafio Fast Workshop**, desenvolvido com Angular.
+![License](https://img.shields.io/badge/license-MIT-green)
 
-## Pré-requisitos
+Repositório contendo o **front-end** do projeto **Desafio Fast Workshop**, desenvolvido com **Angular**. Este projeto foi estruturado para fornecer uma aplicação web moderna e escalável.
 
-Antes de rodar o projeto na sua máquina, certifique-se de ter instalado:
+---
 
-- [Node.js](https://nodejs.org/) (versão recomendada: LTS)
+## 📝 Descrição
+
+O objetivo deste projeto é demonstrar competências em **desenvolvimento front-end**, utilizando Angular, TypeScript e boas práticas de organização de código.  
+O projeto inclui rotas, componentes reutilizáveis e integração com serviços (simulados ou reais).
+
+---
+
+## ⚙️ Tecnologias
+
+- **Angular**: Framework principal
+- **TypeScript**: Linguagem de desenvolvimento
+- **Node.js / npm**: Gerenciamento de pacotes
+- **HTML5 & SCSS**: Estrutura e estilos
+- **Git/GitHub**: Controle de versão
+
+---
+
+## 🛠️ Pré-requisitos
+
+Certifique-se de ter instalado em sua máquina:
+
+- [Node.js](https://nodejs.org/) (versão LTS recomendada)
 - [npm](https://www.npmjs.com/) (gerenciador de pacotes do Node)
-- [Angular CLI](https://angular.io/cli) (instalação via npm)
+- [Angular CLI](https://angular.io/cli)
+
+Instalação do Angular CLI (caso não tenha):
 
 ```bash
 npm install -g @angular/cli
-Instalação
+📥 Instalação do projeto
 Clone o repositório:
 
 bash
@@ -28,56 +51,64 @@ Instale as dependências:
 bash
 Copiar código
 npm install
-Executando o projeto
-Para rodar o projeto localmente:
+🚀 Executando o projeto
+Para rodar a aplicação localmente:
 
 bash
 Copiar código
 ng serve
-O servidor será iniciado em http://localhost:4200.
-Abra o navegador e acesse esse endereço para ver o projeto em execução.
+O servidor será iniciado em:
 
-⚠️ Sempre que fizer alterações no código, o Angular atualizará automaticamente a aplicação no navegador.
+arduino
+Copiar código
+http://localhost:4200
+A aplicação suporta hot reload, então qualquer alteração no código será refletida automaticamente no navegador.
 
-Estrutura do Projeto
-src/app - Contém os componentes, serviços e módulos principais do Angular.
+📂 Estrutura do Projeto
+bash
+Copiar código
+desafio-fast-workshop-front-end/
+│
+├─ src/app/            # Componentes, módulos e serviços do Angular
+├─ src/assets/         # Arquivos estáticos (imagens, fontes, etc.)
+├─ angular.json        # Configurações do Angular CLI
+├─ package.json        # Dependências e scripts
+└─ README.md           # Documentação do projeto
+🔧 Boas práticas
+Seguir padrão Angular Style Guide
 
-src/assets - Arquivos estáticos, como imagens e estilos.
+Componentes e serviços reutilizáveis
 
-angular.json - Configurações do Angular CLI.
+Uso de SCSS modular para estilos
 
-package.json - Dependências e scripts do projeto.
+Comentários claros e código legível
 
-Contribuindo
-Se você quiser contribuir:
+🤝 Contribuição
+Faça um fork do repositório
 
-Faça um fork do repositório.
-
-Crie uma branch com suas alterações:
+Crie uma branch para sua feature:
 
 bash
 Copiar código
 git checkout -b minha-feature
-Faça o commit das suas alterações:
+Commit suas alterações:
 
 bash
 Copiar código
 git commit -m "Descrição da alteração"
-Envie para o seu fork:
+Envie para seu fork:
 
 bash
 Copiar código
 git push origin minha-feature
-Abra um Pull Request neste repositório.
+Abra um Pull Request no repositório principal
 
-Licença
-Este projeto está licenciado sob a MIT License.
+📄 Licença
+Este projeto está sob a licença MIT. Veja LICENSE para mais detalhes.
 
-yaml
-Copiar código
+📌 Referências
+Angular Documentation
 
----
+TypeScript Documentation
 
-Se você quiser, posso criar **uma versão ainda mais simples e direta**, só para quem quer baixar e rodar o projeto rapidamente, sem explicar contribuições ou estrutura detalhada.  
-
-Quer que eu faça essa versão enxuta também?
+Node.js Documentation
