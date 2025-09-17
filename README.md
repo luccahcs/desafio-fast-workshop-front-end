@@ -1,7 +1,5 @@
 # Desafio Fast Workshop - Front End
 
-![License](https://img.shields.io/badge/license-MIT-green)
-
 Repositório contendo o **front-end** do projeto **Desafio Fast Workshop**, desenvolvido com **Angular**.  
 > ⚠️ Este front-end depende do back-end hospedado neste repositório: [Fast Workshops Back-End](https://github.com/luccahcs/fast-workshops-back-end/tree/main/FastWorkshops.Api)
 
@@ -33,23 +31,16 @@ O front-end foi desenvolvido seguindo boas práticas de Angular e arquitetura mo
 
 Instalação do Angular CLI (se necessário):
 
-```bash
 npm install -g @angular/cli
 📥 Instalação do projeto
 Clone o repositório:
 
-bash
-Copiar código
 git clone https://github.com/luccahcs/desafio-fast-workshop-front-end.git
 Acesse a pasta do projeto:
 
-bash
-Copiar código
 cd desafio-fast-workshop-front-end
 Instale as dependências:
 
-bash
-Copiar código
 npm install
 🚀 Executando o projeto
 Certifique-se de que o back-end esteja rodando.
@@ -57,19 +48,14 @@ Exemplo: http://localhost:5000/api (ou a porta configurada).
 
 Rodar o front-end:
 
-bash
-Copiar código
 ng serve
 O servidor será iniciado em:
 
-arduino
-Copiar código
 http://localhost:4200
 🔹 A aplicação consumirá as APIs do back-end para exibir dados corretamente.
 
 📂 Estrutura do Projeto
-bash
-Copiar código
+
 desafio-fast-workshop-front-end/
 │
 ├─ src/app/            # Componentes, módulos e serviços do Angular
@@ -93,23 +79,15 @@ Faça um fork do repositório
 
 Crie uma branch para sua feature:
 
-bash
-Copiar código
 git checkout -b minha-feature
 Commit suas alterações:
 
-bash
-Copiar código
 git commit -m "Descrição da alteração"
 Envie para seu fork:
 
-bash
-Copiar código
 git push origin minha-feature
 Abra um Pull Request no repositório principal
 
-📄 Licença
-Este projeto está sob a licença MIT. Veja LICENSE para mais detalhes.
 
 📌 Referências
 Angular Documentation
