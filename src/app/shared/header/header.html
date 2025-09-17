@@ -1,0 +1,36 @@
+<header class="header">
+    <a href="#" class="logo">
+      <span class="material-icons logo-icon">rocket_launch</span>
+      <span class="logo-text">FAST Workshops</span>
+    </a>
+
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a routerLink="/workshops" class="nav-link">
+        <span class="material-icons" style="font-size: 1.2rem;">work</span>
+        Workshops
+      </a>
+      <a routerLink="/colaboradores" class="nav-link">
+        <span class="material-icons" style="font-size: 1.2rem;">people</span>
+        Colaboradores
+      </a>
+      <a routerLink="/graficos" class="nav-link">
+        <span class="material-icons" style="font-size: 1.2rem;">analytics</span>
+        Gráficos
+      </a>
+    </nav>
+  </header>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+
+      this.classList.toggle('active');
+    });
+  </script>

@@ -1,0 +1,15 @@
+<div class="container">
+	<h1 class="page-title">
+		<span class="material-icons page-title-icon">groups</span>
+		Colaboradores
+	</h1>
+	<p class="page-subtitle">Veja todos os colaboradores cadastrados e sua participação nos workshops</p>
+
+	<ul class="colaboradores-list">
+		<li *ngFor="let colaborador of colaboradores" class="colaborador-item">
+			<span class="material-icons">person</span>
+			<span class="colaborador-nome">{{ colaborador.nome }}</span>
+		</li>
+	</ul>
+
+</div>

@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="page-header">
+      <a href="#" class="back-button">
+        <span class="material-icons">arrow_back</span>
+        Voltar para Workshops
+      </a>
+      
+      <h1 class="page-title">
+        <span class="material-icons page-title-icon">event</span>
+        Detalhes do Workshop
+      </h1>
+      <p class="page-subtitle">Veja as informações completas do workshop e os colaboradores presentes</p>
+    </div>
+
+    <!-- Estado com dados do workshop -->
+    <div class="workshop-detalhe-card" *ngIf="workshop">
+      <div class="workshop-info">
+        <h2>{{ workshop.nome }}</h2>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">
+              <span class="material-icons">event</span>
+              Data e Horário
+            </span>
+            <span class="info-value">{{ workshop.dataRealizacao | date:'dd/MM/yyyy' }}</span>
+          </div>
+          <!-- Adapte para exibir duração e instrutor se existirem no objeto workshop -->
+        </div>
+      </div>
+      <div class="description-container">
+        <h3>
+          <span class="material-icons">description</span>
+          Descrição
+        </h3>
+        <p class="description-text">
+          {{ workshop.descricao }}
+        </p>
+      </div>
+      <div class="participantes">
+        <div class="participantes-header">
+          <h3>
+            <span class="material-icons">groups</span>
+            Colaboradores Presentes
+          </h3>
+          <span class="participantes-count">{{ workshop.participantes.length }} participantes</span>
+        </div>
+        <ul class="participantes-list">
+          <li class="participante-item" *ngFor="let participante of workshop.participantes">
+            <div class="participante-avatar">{{ participante[0] }}</div>
+            <div class="participante-info">
+              <div class="participante-nome">{{ participante }}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="action-buttons">
+        <button class="btn btn-primary" (click)="inscreverParticipante()">
+          <span class="material-icons">person_add</span>
+          Inscrever-se
+        </button>
+      </div>
+    </div>
+
+    <div class="not-found" *ngIf="!workshop">
+      <span class="material-icons not-found-icon">search_off</span>
+      <p class="not-found-text">Workshop não encontrado.</p>
+    </div>
+  </div>
+

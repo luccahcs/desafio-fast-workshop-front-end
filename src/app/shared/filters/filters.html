@@ -1,0 +1,7 @@
+<div class="filters">
+	<button class="filter-button" [class.active]="activeFilter === 'todos'" (click)="setFilter('todos')">Todos</button>
+	<button class="filter-button" [class.active]="activeFilter === 'mes'" (click)="setFilter('mes')">Este Mês</button>
+	<button class="filter-button" [class.active]="activeFilter === 'trimestre'" (click)="setFilter('trimestre')">Trimestre</button>
+	<button class="filter-button" [class.active]="activeFilter === '2023'" (click)="setFilter('2023')">2023</button>
+	<button class="filter-button" [class.active]="activeFilter === '2024'" (click)="setFilter('2024')">2024</button>
+</div>
