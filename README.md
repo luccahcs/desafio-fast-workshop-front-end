@@ -1,59 +1,83 @@
-# FastWorkshops
+# Desafio Fast Workshop - Front End
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
+Este repositório contém o projeto front-end do **Desafio Fast Workshop**, desenvolvido com Angular.
 
-## Development server
+## Pré-requisitos
 
-To start a local development server, run:
+Antes de rodar o projeto na sua máquina, certifique-se de ter instalado:
+
+- [Node.js](https://nodejs.org/) (versão recomendada: LTS)
+- [npm](https://www.npmjs.com/) (gerenciador de pacotes do Node)
+- [Angular CLI](https://angular.io/cli) (instalação via npm)
 
 ```bash
+npm install -g @angular/cli
+Instalação
+Clone o repositório:
+
+bash
+Copiar código
+git clone https://github.com/luccahcs/desafio-fast-workshop-front-end.git
+Acesse a pasta do projeto:
+
+bash
+Copiar código
+cd desafio-fast-workshop-front-end
+Instale as dependências:
+
+bash
+Copiar código
+npm install
+Executando o projeto
+Para rodar o projeto localmente:
+
+bash
+Copiar código
 ng serve
-```
+O servidor será iniciado em http://localhost:4200.
+Abra o navegador e acesse esse endereço para ver o projeto em execução.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+⚠️ Sempre que fizer alterações no código, o Angular atualizará automaticamente a aplicação no navegador.
 
-## Code scaffolding
+Estrutura do Projeto
+src/app - Contém os componentes, serviços e módulos principais do Angular.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+src/assets - Arquivos estáticos, como imagens e estilos.
 
-```bash
-ng generate component component-name
-```
+angular.json - Configurações do Angular CLI.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+package.json - Dependências e scripts do projeto.
 
-```bash
-ng generate --help
-```
+Contribuindo
+Se você quiser contribuir:
 
-## Building
+Faça um fork do repositório.
 
-To build the project run:
+Crie uma branch com suas alterações:
 
-```bash
-ng build
-```
+bash
+Copiar código
+git checkout -b minha-feature
+Faça o commit das suas alterações:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+bash
+Copiar código
+git commit -m "Descrição da alteração"
+Envie para o seu fork:
 
-## Running unit tests
+bash
+Copiar código
+git push origin minha-feature
+Abra um Pull Request neste repositório.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Licença
+Este projeto está licenciado sob a MIT License.
 
-```bash
-ng test
-```
+yaml
+Copiar código
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+Se você quiser, posso criar **uma versão ainda mais simples e direta**, só para quem quer baixar e rodar o projeto rapidamente, sem explicar contribuições ou estrutura detalhada.  
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Quer que eu faça essa versão enxuta também?
